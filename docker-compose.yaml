@@ -85,8 +85,8 @@ services:
       dockerfile: Dockerfile
     environment:
       CLICKHOUSE_DSN: "clickhouse://clickhouse:9000/bionic_analytics"
-      JWKS_URL: "http://keycloak:8080/realms/reports-realm/protocol/openid-connect/certs"
       SERVER_PORT: "8000"
+      JWKS_URL: "http://keycloak:8080/realms/reports-realm/protocol/openid-connect/certs"
     ports:
       - "8000:8000"
     depends_on:
